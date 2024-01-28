@@ -1,0 +1,22 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.phone-icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  mask-image: url("../../images/icons/phone.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 21px 21px;
+  background-color: #000000;
+
+  &:hover {
+    background-color: variables.$color-orange;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

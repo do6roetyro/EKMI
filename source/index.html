@@ -4,729 +4,249 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link
+      rel="preload"
+      href="fonts/Raleway-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicons/apple-touch-icon.png" type="image/png" />
     <script defer="defer" src="scripts/index.js"></script>
-    <title>Berries - main & catalog</title>
+    <title>EKM</title>
   </head>
 
   <body class="page__body">
     <div class="page__container">
       <header class="main-header">
         <nav class="main-nav">
-          <div class="main-nav__wrapper main-nav__wrapper--noscript">
-            <a class="main-nav__logo-link logo" href="#">
-              <span class="visually-hidden">Перейти на главную</span>
+          <div class="main-nav__wrapper wrapper">
+            <a href="" class="main-nav__link">
               <svg
-                class="logo__image"
-                width="133"
-                height="54"
-                viewBox="0 0 133 60"
+                class="main-nav__logo"
+                width="92"
+                height="34"
+                viewBox="0 0 92 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
-                <path
-                  d="M16.07 21.28s-2.08 1.3-2.54 3.41c-.46 2.13 0 4.45 0 4.45s-3.26 1.4-3.26 5.77c0 4.37 2.75 5.6 2.75 5.6s.03 5.17 3.1 7.95c3.08 2.79 6.31 2.8 6.31 2.8s1.68 3.67 6.62 3.67 6.62-3.67 6.62-3.67 3.34-.5 6.3-2.8c2.96-2.29 2.88-7.94 2.88-7.94s2.98-1.24 2.98-5.61c0-4.38-3.26-5.77-3.26-5.77s.47-2.32 0-4.45c-.46-2.12-2.54-3.4-2.54-3.4"
-                  fill="#B22EC8"
-                />
-                <path
-                  d="M44.67 27.86c0-8.94-7-11.45-15.64-11.45-8.63 0-15.63 2.52-15.63 11.45s7 16.17 15.63 16.17c8.64 0 15.64-7.24 15.64-16.17Z"
-                  fill="#B22EC8"
-                />
-                <path
-                  d="M29.53 54.92s4.23-3.05 3.95-10.09c1.82-1.96 2.38-4.59.73-7.78 2.8-4.11 2.5-8.56-.84-11.94 1.38-2.05.66-3.83-.9-5.16 0 0 4.48 2.27 7.9-.98 0 0 7.21 5.36 4.2 10.17 0 0 7.95 5.56.28 11.38 0 0 1.12 8.86-8.99 10.7 0 0-2.66 3.12-6.33 3.7Z"
-                  fill="#6A107A"
-                />
-                <path
-                  class="leaves"
-                  d="M44.93 9.38c-3.44 16.61-14 10.95-15.43 8.03-1.43-2.92-.05-14.55 15.43-8.03Z"
-                  fill="#0F805D"
-                />
-                <path
-                  class="leaves"
-                  d="M13.17 9.38c3.44 16.61 14 10.95 15.43 8.03 1.43-2.92.05-14.55-15.43-8.03Z"
-                  fill="#0F805D"
-                />
-                <path
-                  d="M44.93 9.38c-3.44 16.61-14 10.95-15.43 8.03-1.43-2.92-.05-14.55 15.43-8.03v0Z"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M36.71 12.74c-2.52 1-5.75 2.62-7.18 4.72m-16.36-8.08c3.44 16.61 14 10.95 15.43 8.03 1.43-2.92.05-14.55-15.43-8.03v0Z"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M21.39 12.74c2.52 1 5.75 2.62 7.18 4.72m-12.5 3.82s-2.08 1.3-2.54 3.41c-.46 2.13 0 4.45 0 4.45s-3.26 1.4-3.26 5.77c0 4.37 2.75 5.6 2.75 5.6s.03 5.17 3.1 7.95c3.08 2.79 6.31 2.8 6.31 2.8s1.68 3.68 6.62 3.68 6.62-3.68 6.62-3.68 3.34-.5 6.3-2.8c2.96-2.29 2.88-7.94 2.88-7.94s2.98-1.24 2.98-5.61c0-4.38-3.26-5.77-3.26-5.77s.47-2.32 0-4.45c-.46-2.12-2.54-3.4-2.54-3.4"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34.03 24.56s-2.1 2.3-4.7 2.3m-4.9-2.3s2.11 2.3 4.71 2.3m11.19 6.08c0 2.4-2 4.36-4.47 4.36m-4.63-4.36c0 2.4 2 4.36 4.46 4.36m-8.4-4.36c0 2.4-2 4.36-4.46 4.36m-4.64-4.36c0 2.4 2 4.36 4.47 4.36m11.1 7.59c-.84 1.15-2.55 1.94-4.52 1.94m-4.8-2.09c.8 1.24 2.57 2.1 4.61 2.1m-4.65-1.8c0 1.04-.62 1.97-1.6 2.62m11-2.62c0 1.13.74 2.13 1.9 2.8"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.86 35.56a4.38 4.38 0 0 1-3.18 4.18m4.47-15.2c0 2.57-2 4.66-4.47 4.66m21.68-4.67c0 2.58 2 4.67 4.46 4.67m-2.15 6.36a4.37 4.37 0 0 0 2.94 4.1"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  class="text"
-                  d="M76.48 45.2c-.61 0-.97-.3-1.08-.92-.13-1.01-.2-1.97-.2-2.88-.08-2.05-.15-4.19-.2-6.4-.03-2.24-.04-3.87-.04-4.88-.59.27-1.05.64-1.4 1.12a8.9 8.9 0 0 0-.92 1.76 11.2 11.2 0 0 0-.72 3.88v1l-.04 1.48c-.03.83-.1 1.73-.24 2.72a3.8 3.8 0 0 1-2 3c-.19.1-.43.16-.72.16-.35 0-.64-.08-.88-.24-.21-.19-.28-.44-.2-.76a.73.73 0 0 1 .24-.4c.1-.08.25-.16.44-.24.21-.08.37-.16.48-.24.4-.37.6-.88.6-1.52l.04-3.36c.05-1.3.12-2.3.2-3a11.81 11.81 0 0 1 1.36-4.12 9 9 0 0 1 .88-1.48 6.4 6.4 0 0 1-2.96-2.6c-.53-1.04-.8-2.56-.8-4.56 0-1.57.28-3.12.84-4.64.56-1.5 1.48-2.44 2.76-2.84l1.76-.6c.24-.1.5-.16.8-.16.56 0 1.2.24 1.92.72.45.27.68.7.68 1.32a77.59 77.59 0 0 0-.24 5.08v8.88a188.26 188.26 0 0 0 .2 9.32c.05.85.1 1.56.12 2.12l.12 2.2v.24c0 .35-.05.57-.16.68-.1.1-.32.16-.64.16Zm-1.68-29.04-.92.32c-.45.16-.85.35-1.2.56-.4.19-.77.59-1.12 1.2a8.95 8.95 0 0 0-.76 1.88 4.8 4.8 0 0 0-.24 1.52l.08 1.76c0 .83.01 1.48.04 1.96.03.75.24 1.37.64 1.88a3.4 3.4 0 0 0 1.76 1c.3.08.63.2 1 .36.4.13.7.24.88.32l-.16-12.76Zm7.64 29.16-.16-.56c-.06-.27-.07-.5-.04-.68.05-3.1.13-5.4.24-6.92a70 70 0 0 0 .04-2.48c0-1.97-.1-4.36-.28-7.16-.16-3.41-.24-6-.24-7.76 0-.4.16-.76.48-1.08.32-.32.7-.48 1.16-.48 1.52 0 2.84.12 3.96.36.53.1.88.3 1.04.56.16.24.21.65.16 1.24a2.12 2.12 0 0 1-1.76.28c-.24-.05-.88-.1-1.92-.16h-.08c-.38 0-.56.2-.56.6-.14 3.87-.2 6.07-.2 6.6a370.84 370.84 0 0 0 .2 7.64 59.72 59.72 0 0 0-.12 3.88c0 2.21.04 3.76.12 4.64-.03.59-.12.99-.28 1.2-.16.24-.46.36-.88.36l-.88-.08Zm13.77.44c-.7 0-1.33-.23-1.92-.68a4.75 4.75 0 0 1-1.44-1.76 15.87 15.87 0 0 1-1.44-5.32 39.95 39.95 0 0 1-.36-5.24c0-.32.01-.59.04-.8v-.72c0-.13-.01-.2-.04-.2v-.72l.04-2.8c.03-.85.13-2.21.32-4.08.13-1.28.44-2.52.92-3.72a3 3 0 0 1 .72-1.2c.3-.3.63-.44 1-.44a6.7 6.7 0 0 1 5.04 2.2c.53.67.99 1.5 1.36 2.48.37.96.64 1.99.8 3.08.16 1.12.24 2.3.24 3.56v.32c0 .83.01 1.57.04 2.24l.04 2.28c0 7.68-1.79 11.52-5.36 11.52Zm-.16-1.68c.48 0 .92-.19 1.32-.56.4-.4.7-.93.92-1.6.5-1.36.81-2.83.92-4.4.13-1.36.2-2.53.2-3.52 0-1.2-.1-2.77-.28-4.72a65.05 65.05 0 0 1-.24-4.6v-.72a4.29 4.29 0 0 0-1.04-2.64 2.84 2.84 0 0 0-2.28-1.12c-.9 0-1.5.52-1.8 1.56-.27.83-.4 1.9-.4 3.2 0 .5.01.93.04 1.28v1.08l-.08 1.84a19.5 19.5 0 0 0-.08 1.84c0 1.44.04 2.87.12 4.28a35 35 0 0 0 .8 5.84c.43 1.97 1.05 2.96 1.88 2.96Zm23.84 5.84c-.21.05-.37.08-.48.08-.32 0-.54-.2-.68-.6-.1-.32-.16-.72-.16-1.2l.04-2.76c0-.16-.01-.3-.04-.44l-.08-.4h-4.6c.27 0-.37.13-1.92.4-1.52.24-2.7.4-3.56.48l-1.8.16-2 .2v.88c.03.35.03.76 0 1.24v.2c0 .43-.1.75-.32.96-.21.21-.41.32-.6.32-.1 0-.26-.05-.48-.16a1.9 1.9 0 0 1-.8-1.44l-.12-2.92c-.05-1.04.38-1.56 1.28-1.56.51-.03.91-.16 1.2-.4.3-.24.64-.61 1.04-1.12.4-.53.71-1.12.92-1.76a24.74 24.74 0 0 0 1.2-5.36c.11-.96.24-2.33.4-4.12.24-2.8.36-5.61.36-8.44l-.04-2.24c0-.5.15-.92.44-1.24.3-.35.7-.52 1.2-.52.16 0 .28.01.36.04 1.23.21 2.23.35 3 .4h.2c.35 0 .55-.07.6-.2.24-.32.54-.48.88-.48.24 0 .46.05.64.16.43.16.71.56.84 1.2l-.2 6.84a623.27 623.27 0 0 0 .12 12.72l.04 2.2c0 .21.02.41.04.6l.08.56c.54.05.94.08 1.2.08.22 0 .38-.01.48-.04.59-.08 1.11.07 1.56.44.48.35.72.8.72 1.36 0 .72-.05 1.8-.16 3.24 0 .37-.02.9-.08 1.6-.05.56-.29.9-.72 1.04Zm-11.52-6.36a106 106 0 0 0 3.52-.36 16.6 16.6 0 0 0 2.6-.6c.27-3.23.4-6.68.4-10.36 0-3.41-.13-7.16-.4-11.24l-3.88-.2-.04 1.88c-.21 4.1-.36 7.17-.44 9.2a33.3 33.3 0 0 1-1.56 8.96l-.36 1.2a4.44 4.44 0 0 1-.76 1.6l.92-.08Zm22.8 1.8c-.62 0-1.07-.1-1.36-.28-.3-.19-.44-.53-.44-1.04 0-.8-.14-2.16-.4-4.08l-.16-.84-3.96-.6a47.3 47.3 0 0 0-.68 3.72c-.16 1.3-.42 2.17-.76 2.6a.95.95 0 0 1-.8.36c-.32 0-.62-.1-.88-.28a.95.95 0 0 1-.4-.76l.08-.2.04-.16a176.2 176.2 0 0 0 4-20.28 29 29 0 0 0 .12-1.64c.08-.99.16-1.77.24-2.36.1-.59.26-1.03.48-1.32h1.36c.37 0 .7.1.96.28.26.16.4.4.4.72 0 2.03.28 5.04.84 9.04.53 4.1.8 6.99.8 8.64 0 .16.06.57.2 1.24.13.61.2 1.01.2 1.2 0 .19.13.99.4 2.4.24 1.28.36 2.1.36 2.48v.04c0 .59-.22.96-.64 1.12Zm-2.64-7.68a7.7 7.7 0 0 1-.12-1.48c0-2.4-.22-5.47-.64-9.2l-.4-4.16c-1.15 6.27-1.94 11-2.36 14.2.4.27 1.57.48 3.52.64Z"
-                  fill="#0F805D"
-                />
+                <rect width="91.9977" height="34" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_330_5476"
+                      transform="matrix(0.00293313 0 0 0.00793651 -0.0866263 0)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_330_5476"
+                    width="400"
+                    height="126"
+                    xlink:href="data:image/jpeg;base64,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"
+                  />
+                </defs>
               </svg>
             </a>
-            <button
-              class="main-nav__button-menu button main-nav__button-menu--noscript"
-              type="button"
-              aria-label="открыть меню"
-            ></button>
+            <div class="main-nav__container">
+              <div class="main-nav__language language">
+                <button
+                  type="button"
+                  class="language__chose"
+                  aria-label="выбрать язык"
+                >
+                  <span class="language__choosen" id="selectedLanguage"
+                    >RU</span
+                  >
+                </button>
+                <div class="language__container language__container--close">
+                  <label class="language__value" for="ru-language"
+                    >RU
+                    <input
+                      class="language__input"
+                      type="radio"
+                      name="language"
+                      id="ru-language"
+                      value="RU"
+                      checked
+                  /></label>
+                  <label class="language__value" for="ua-language"
+                    >UA
+                    <input
+                      class="language__input"
+                      type="radio"
+                      name="language"
+                      id="ua-language"
+                      value="UA"
+                  /></label>
+                  <label class="language__value" for="en-language"
+                    >EN
+                    <input
+                      class="language__input"
+                      type="radio"
+                      name="language"
+                      id="en-language"
+                      value="EN"
+                  /></label>
+                </div>
+              </div>
+              <a
+                class="main-nav__phone-link phone-icon"
+                href="tel:+1234567890"
+              ></a>
+              <button
+                class="main-header__button menu-button"
+                type="button"
+                aria-label="меню"
+              >
+                <span
+                  class="menu-button__element menu-button__element--close"
+                ></span>
+              </button>
+              <div class="main-nav__menu menu menu--closed">
+                <div class="menu__wrapper">
+                  <p class="menu__title">Каталог</p>
+                  <ul class="menu__list list">
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Диваны</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Кресла</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Стулья</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Кровати</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Матрацы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Пуфы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link"
+                        >Эксклюзивная мебель</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">2D-3D модели</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link"
+                        >Индивидуальная мебель</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Шоу-рум</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link"
+                        >Страница партёров дизайнеров</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Дилерам</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Контакты</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="##" class="menu__link link">Каталог</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <ul class="main-nav__list main-nav__list--noscript list">
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="#">Каталог</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="#">Новости</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="#">Контакты</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">Заказать</a>
-            </li>
-          </ul>
         </nav>
       </header>
       <main class="main-container">
-        <h1 class="visually-hidden">'Ягоды' - Ягоды с доставкой</h1>
-        <section class="hero hero--main">
-          <div class="hero__wrapper wrapper">
-            <h2 class="hero__title text text--h2">
-              Ягоды с&nbsp;доставкой
-            </h2>
-            <ul class="hero__list list">
-              <li class="hero__item hero__item--leave">Отборные ягоды</li>
-              <li class="hero__item hero__item--snow">
-                Натуральный вкус сохранён методом шоковой заморозки
-              </li>
-              <li class="hero__item hero__item--moto">
-                Доставка по Санкт-Петербургу
-              </li>
-            </ul>
-            <a class="hero__link link button button--purple" href="form.html"
-              >Заказать</a
-            >
-          </div>
-        </section>
-        <section class="catalog">
-          <div class="catalog__wrapper wrapper">
-            <h2 class="catalog__title text text--h2">Каталог</h2>
-            <ul class="catalog__list list">
-              <!-- 1 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_raspberry@1x.webp 1x,
-                        images/catalog_raspberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_raspberry@1x.jpg"
-                      srcset="images/catalog_raspberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Малина."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Малина</h3>
-                  <p class="catalog-item__price item-price">
-                    350 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 2 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_blackberry@1x.webp 1x,
-                        images/catalog_blackberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_blackberry@1x.jpg"
-                      srcset="images/catalog_blackberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Ежевика."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Ежевика</h3>
-                  <p class="catalog-item__price item-price">
-                    550 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 3 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_cowberry@1x.webp 1x,
-                        images/catalog_cowberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_cowberry@1x.jpg"
-                      srcset="images/catalog_cowberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Брусника."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Брусника</h3>
-                  <p class="catalog-item__price item-price">
-                    390 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 4 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_strawberry@1x.webp 1x,
-                        images/catalog_strawberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_strawberry@1x.jpg"
-                      srcset="images/catalog_strawberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Клубника."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Клубника</h3>
-                  <p class="catalog-item__price item-price">
-                    450 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 5 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_cherry@1x.webp 1x,
-                        images/catalog_cherry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_cherry@1x.jpg"
-                      srcset="images/catalog_cherry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Вишня."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Вишня</h3>
-                  <p class="catalog-item__price item-price">
-                    375 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 6 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_gooseberry@1x.webp 1x,
-                        images/catalog_gooseberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_gooseberry@1x.jpg"
-                      srcset="images/catalog_gooseberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Крыжовник."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Крыжовник</h3>
-                  <p class="catalog-item__price item-price">
-                    300 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 7 -->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_blueberry@1x.webp 1x,
-                        images/catalog_blueberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_blueberry@1x.jpg"
-                      srcset="images/catalog_blueberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Голубика."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Голубика</h3>
-                  <p class="catalog-item__price item-price">
-                    510 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-              <!-- 8-->
-              <li class="catalog__item catalog-item">
-                <a class="catalog-item__link link" href="#" tabindex="-1">
-                  <picture>
-                    <source
-                      media="(min-width:320px)"
-                      srcset="
-                        images/catalog_cranberry@1x.webp 1x,
-                        images/catalog_cranberry@2x.webp 2x
-                      "
-                      type="image/webp"
-                      width="344"
-                      height="180"
-                    />
-                    <img
-                      class="catalog-item__image"
-                      loading="lazy"
-                      src="images/catalog_cranberry@1x.jpg"
-                      srcset="images/catalog_cranberry@2x.jpg 2x"
-                      width="344"
-                      height="180"
-                      alt="Клюква."
-                    />
-                  </picture>
-                </a>
-                <div class="catalog-item__container">
-                  <h3 class="catalog-item__title text">Клюква</h3>
-                  <p class="catalog-item__price item-price">
-                    320 ₽
-                    <span class="item-price__text">за 1 кг</span>
-                  </p>
-                  <a
-                    class="catalog-item__button link button button--purple"
-                    href="#"
-                    >Заказать</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="news">
-          <div class="news__wrapper wrapper">
-            <h2 class="news__title text text--h2">Что новенького?</h2>
-            <div class="news__container">
-              <article class="news__item news-item">
-                <h3 class="news-item__title text">Новый урожай клубники</h3>
-                <p class="news-item__description text">
-                  <span class="text__wrap text__wrap--news"
-                    >К нам поступила свежая сочная ароматная клубника
-                  </span>
-                  из Алтайского края. Крупные отборные ягоды можно приобрести
-                  свежими
-                  <span class="text__wrap text__wrap--news-5"
-                    >от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон
-                    клубники короткий и свежие ягоды скоро закончатся.</span
-                  >
-                </p>
-                <p class="news-item__date text">22 июня 2022</p>
-              </article>
-              <article class="news__item news-item">
-                <h3 class="news-item__title news-item__title--discount text">
-                  В июне дарим скидку 15% на все свежие ягоды
-                </h3>
-                <p class="news-item__description text">
-                  Свежие ягоды урожая этого года со скидкой 15%. Клубнику,
-                  малину, голубику, вишню доставим от 200 гр.
-                </p>
-                <p class="news-item__date text">15 июня 2022</p>
-              </article>
-              <article class="news__item news__item--mix news-item">
-                <h3 class="news-item__title news-item__title--berriesmix text">
-                  Микс из ягод
-                </h3>
-                <p class="news-item__description text">
-                  <span class="text__wrap text__wrap--news-1"
-                    >Мы приготовим для вас смеси
-                  </span>
-                  <span class="text__wrap text__wrap--news-4"
-                    >из различных замороженных ягод по вашему пожеланию. Ягодные
-                    смеси удобно использовать для приготовления напитков. Все
-                    ягоды
-                  </span>
-
-                  <span class="text__wrap text__wrap--news-2"
-                    >замораживаются методом шоковой заморозки, что позволяет
-                  </span>
-                  <span class="text__wrap text__wrap--news-3"
-                    >сохранить их естественный вкус и аромат</span
-                  >.
-                </p>
-                <p class="news-item__date text">02 июня 2022</p>
-              </article>
+        <h1 class="visually-hidden">'EKMI' - Производство мебели</h1>
+        <section class="hero">
+          <h2 class="visually-hidden">'EKMI'- Основано в 1993 году</h2>
+          <p class="hero__title">ЛУЧШАЯ ЖИЗНЬ СОЗДАННАЯ ДЛЯ ВАС!</p>
+          <!-- Slider main container -->
+          <div class="hero__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper__slide swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/hero_1@1x.webp 1x, images/hero_1@2x.webp 2x"
+                    type="image/webp"
+                    width="375"
+                    height="303"
+                  />
+                  <img
+                    class="swiper-slide__image"
+                    src="images/hero_1@1x.jpg"
+                    alt="Диван."
+                    srcset="images/hero_1@2x.jpg 2x"
+                    width="375"
+                    height="303"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="swiper__slide swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/hero_2@1x.webp 1x, images/hero_2@2x.webp 2x"
+                    type="image/webp"
+                    width="375"
+                    height="303"
+                  />
+                  <img
+                    class="swiper-slide__image"
+                    src="images/hero_2@1x.jpg"
+                    alt="Диван."
+                    srcset="images/hero_2@2x.jpg 2x"
+                    width="375"
+                    height="303"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="swiper__slide swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/hero_3@1x.webp 1x, images/hero_3@2x.webp 2x"
+                    type="image/webp"
+                    width="375"
+                    height="303"
+                  />
+                  <img
+                    class="swiper-slide__image"
+                    src="images/hero_3@1x.jpg"
+                    alt="Диван."
+                    srcset="images/hero_3@2x.jpg 2x"
+                    width="375"
+                    height="303"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__wrapper wrapper">
-            <h2 class="contacts__title text text--h2">
-              <span class="text__wrap text__wrap--contacts">Где забрать</span>
-              ягоды?
-            </h2>
-            <p class="contacts__description text">
-              Забери ягоды с нашего склада по адресу:
-            </p>
-            <div class="contacts__container">
-              <p
-                class="contacts__information contacts__information--adress text"
-              >
-                <span class="text__align-contacts"
-                  >Набережная Обводного канала, 101</span
-                >
-              </p>
-              <a
-                class="contacts__information contacts__information--phone link text"
-                href="tel:+79105244118"
-                ><span class="text__align-contacts">+ 7 910 524 41 18</span>
-              </a>
-              <a
-                class="contacts__information contacts__information--mail link text"
-                href="mailto:info@yagoda.ru"
-                ><span class="text__align-contacts">info@yagoda.ru</span></a
-              >
+            <div class="swiper__pagination swiper-pagination">
             </div>
-          </div>
-          <div class="contacts__location location">
-            <iframe
-              class="location__map location__map--nojs"
-              title="Карта."
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2000.132519445511!2d30.331224!3d59.913348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1704965020585!5m2!1sru!2sru"
-              width="320"
-              height="372"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <noscript>
-              <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    images/map_desktop@1x.webp,
-                    images/map_desktop@2x.webp 2x
-                  "
-                  width="553"
-                  height="372"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    images/map_desktop@1x.jpg,
-                    images/map_desktop@2x.jpg 2x
-                  "
-                  width="553"
-                  height="372"
-                  type="image/jpg"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    images/map_tablet@1x.webp,
-                    images/map_tablet@2x.webp 2x
-                  "
-                  width="768"
-                  height="372"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="images/map_tablet@1x.jpg, images/map_tablet@2x.jpg 2x"
-                  width="768"
-                  height="372"
-                  type="image/jpg"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    images/map_mobile@1x.webp,
-                    images/map_mobile@2x.webp 2x
-                  "
-                  width="320"
-                  height="372"
-                  type="image/webp"
-                />
-                <img
-                  class="location__picture"
-                  loading="lazy"
-                  src="images/map_mobile@1x.jpg"
-                  srcset="images/map_mobile@2x.jpg"
-                  width="320"
-                  height="372"
-                  alt="Расположение на карте города."
-                />
-              </picture>
-            </noscript>
           </div>
         </section>
       </main>
-      <footer class="main-footer">
-        <div class="main-footer__wrapper wrapper">
-          <div class="main-footer__container">
-            <a class="main-footer__logo-link logo" href="#">
-              <span class="visually-hidden">Перейти на главную</span>
-              <svg
-                class="logo__image"
-                width="133"
-                height="54"
-                viewBox="0 0 133 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.07 21.28s-2.08 1.3-2.54 3.41c-.46 2.13 0 4.45 0 4.45s-3.26 1.4-3.26 5.77c0 4.37 2.75 5.6 2.75 5.6s.03 5.17 3.1 7.95c3.08 2.79 6.31 2.8 6.31 2.8s1.68 3.67 6.62 3.67 6.62-3.67 6.62-3.67 3.34-.5 6.3-2.8c2.96-2.29 2.88-7.94 2.88-7.94s2.98-1.24 2.98-5.61c0-4.38-3.26-5.77-3.26-5.77s.47-2.32 0-4.45c-.46-2.12-2.54-3.4-2.54-3.4"
-                  fill="#B22EC8"
-                />
-                <path
-                  d="M44.67 27.86c0-8.94-7-11.45-15.64-11.45-8.63 0-15.63 2.52-15.63 11.45s7 16.17 15.63 16.17c8.64 0 15.64-7.24 15.64-16.17Z"
-                  fill="#B22EC8"
-                />
-                <path
-                  d="M29.53 54.92s4.23-3.05 3.95-10.09c1.82-1.96 2.38-4.59.73-7.78 2.8-4.11 2.5-8.56-.84-11.94 1.38-2.05.66-3.83-.9-5.16 0 0 4.48 2.27 7.9-.98 0 0 7.21 5.36 4.2 10.17 0 0 7.95 5.56.28 11.38 0 0 1.12 8.86-8.99 10.7 0 0-2.66 3.12-6.33 3.7Z"
-                  fill="#6A107A"
-                />
-                <path
-                  class="leaves"
-                  d="M44.93 9.38c-3.44 16.61-14 10.95-15.43 8.03-1.43-2.92-.05-14.55 15.43-8.03Z"
-                  fill="#0F805D"
-                />
-                <path
-                  class="leaves"
-                  d="M13.17 9.38c3.44 16.61 14 10.95 15.43 8.03 1.43-2.92.05-14.55-15.43-8.03Z"
-                  fill="#0F805D"
-                />
-                <path
-                  d="M44.93 9.38c-3.44 16.61-14 10.95-15.43 8.03-1.43-2.92-.05-14.55 15.43-8.03v0Z"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M36.71 12.74c-2.52 1-5.75 2.62-7.18 4.72m-16.36-8.08c3.44 16.61 14 10.95 15.43 8.03 1.43-2.92.05-14.55-15.43-8.03v0Z"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M21.39 12.74c2.52 1 5.75 2.62 7.18 4.72m-12.5 3.82s-2.08 1.3-2.54 3.41c-.46 2.13 0 4.45 0 4.45s-3.26 1.4-3.26 5.77c0 4.37 2.75 5.6 2.75 5.6s.03 5.17 3.1 7.95c3.08 2.79 6.31 2.8 6.31 2.8s1.68 3.68 6.62 3.68 6.62-3.68 6.62-3.68 3.34-.5 6.3-2.8c2.96-2.29 2.88-7.94 2.88-7.94s2.98-1.24 2.98-5.61c0-4.38-3.26-5.77-3.26-5.77s.47-2.32 0-4.45c-.46-2.12-2.54-3.4-2.54-3.4"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34.03 24.56s-2.1 2.3-4.7 2.3m-4.9-2.3s2.11 2.3 4.71 2.3m11.19 6.08c0 2.4-2 4.36-4.47 4.36m-4.63-4.36c0 2.4 2 4.36 4.46 4.36m-8.4-4.36c0 2.4-2 4.36-4.46 4.36m-4.64-4.36c0 2.4 2 4.36 4.47 4.36m11.1 7.59c-.84 1.15-2.55 1.94-4.52 1.94m-4.8-2.09c.8 1.24 2.57 2.1 4.61 2.1m-4.65-1.8c0 1.04-.62 1.97-1.6 2.62m11-2.62c0 1.13.74 2.13 1.9 2.8"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.86 35.56a4.38 4.38 0 0 1-3.18 4.18m4.47-15.2c0 2.57-2 4.66-4.47 4.66m21.68-4.67c0 2.58 2 4.67 4.46 4.67m-2.15 6.36a4.37 4.37 0 0 0 2.94 4.1"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  class="text"
-                  d="M76.48 45.2c-.61 0-.97-.3-1.08-.92-.13-1.01-.2-1.97-.2-2.88-.08-2.05-.15-4.19-.2-6.4-.03-2.24-.04-3.87-.04-4.88-.59.27-1.05.64-1.4 1.12a8.9 8.9 0 0 0-.92 1.76 11.2 11.2 0 0 0-.72 3.88v1l-.04 1.48c-.03.83-.1 1.73-.24 2.72a3.8 3.8 0 0 1-2 3c-.19.1-.43.16-.72.16-.35 0-.64-.08-.88-.24-.21-.19-.28-.44-.2-.76a.73.73 0 0 1 .24-.4c.1-.08.25-.16.44-.24.21-.08.37-.16.48-.24.4-.37.6-.88.6-1.52l.04-3.36c.05-1.3.12-2.3.2-3a11.81 11.81 0 0 1 1.36-4.12 9 9 0 0 1 .88-1.48 6.4 6.4 0 0 1-2.96-2.6c-.53-1.04-.8-2.56-.8-4.56 0-1.57.28-3.12.84-4.64.56-1.5 1.48-2.44 2.76-2.84l1.76-.6c.24-.1.5-.16.8-.16.56 0 1.2.24 1.92.72.45.27.68.7.68 1.32a77.59 77.59 0 0 0-.24 5.08v8.88a188.26 188.26 0 0 0 .2 9.32c.05.85.1 1.56.12 2.12l.12 2.2v.24c0 .35-.05.57-.16.68-.1.1-.32.16-.64.16Zm-1.68-29.04-.92.32c-.45.16-.85.35-1.2.56-.4.19-.77.59-1.12 1.2a8.95 8.95 0 0 0-.76 1.88 4.8 4.8 0 0 0-.24 1.52l.08 1.76c0 .83.01 1.48.04 1.96.03.75.24 1.37.64 1.88a3.4 3.4 0 0 0 1.76 1c.3.08.63.2 1 .36.4.13.7.24.88.32l-.16-12.76Zm7.64 29.16-.16-.56c-.06-.27-.07-.5-.04-.68.05-3.1.13-5.4.24-6.92a70 70 0 0 0 .04-2.48c0-1.97-.1-4.36-.28-7.16-.16-3.41-.24-6-.24-7.76 0-.4.16-.76.48-1.08.32-.32.7-.48 1.16-.48 1.52 0 2.84.12 3.96.36.53.1.88.3 1.04.56.16.24.21.65.16 1.24a2.12 2.12 0 0 1-1.76.28c-.24-.05-.88-.1-1.92-.16h-.08c-.38 0-.56.2-.56.6-.14 3.87-.2 6.07-.2 6.6a370.84 370.84 0 0 0 .2 7.64 59.72 59.72 0 0 0-.12 3.88c0 2.21.04 3.76.12 4.64-.03.59-.12.99-.28 1.2-.16.24-.46.36-.88.36l-.88-.08Zm13.77.44c-.7 0-1.33-.23-1.92-.68a4.75 4.75 0 0 1-1.44-1.76 15.87 15.87 0 0 1-1.44-5.32 39.95 39.95 0 0 1-.36-5.24c0-.32.01-.59.04-.8v-.72c0-.13-.01-.2-.04-.2v-.72l.04-2.8c.03-.85.13-2.21.32-4.08.13-1.28.44-2.52.92-3.72a3 3 0 0 1 .72-1.2c.3-.3.63-.44 1-.44a6.7 6.7 0 0 1 5.04 2.2c.53.67.99 1.5 1.36 2.48.37.96.64 1.99.8 3.08.16 1.12.24 2.3.24 3.56v.32c0 .83.01 1.57.04 2.24l.04 2.28c0 7.68-1.79 11.52-5.36 11.52Zm-.16-1.68c.48 0 .92-.19 1.32-.56.4-.4.7-.93.92-1.6.5-1.36.81-2.83.92-4.4.13-1.36.2-2.53.2-3.52 0-1.2-.1-2.77-.28-4.72a65.05 65.05 0 0 1-.24-4.6v-.72a4.29 4.29 0 0 0-1.04-2.64 2.84 2.84 0 0 0-2.28-1.12c-.9 0-1.5.52-1.8 1.56-.27.83-.4 1.9-.4 3.2 0 .5.01.93.04 1.28v1.08l-.08 1.84a19.5 19.5 0 0 0-.08 1.84c0 1.44.04 2.87.12 4.28a35 35 0 0 0 .8 5.84c.43 1.97 1.05 2.96 1.88 2.96Zm23.84 5.84c-.21.05-.37.08-.48.08-.32 0-.54-.2-.68-.6-.1-.32-.16-.72-.16-1.2l.04-2.76c0-.16-.01-.3-.04-.44l-.08-.4h-4.6c.27 0-.37.13-1.92.4-1.52.24-2.7.4-3.56.48l-1.8.16-2 .2v.88c.03.35.03.76 0 1.24v.2c0 .43-.1.75-.32.96-.21.21-.41.32-.6.32-.1 0-.26-.05-.48-.16a1.9 1.9 0 0 1-.8-1.44l-.12-2.92c-.05-1.04.38-1.56 1.28-1.56.51-.03.91-.16 1.2-.4.3-.24.64-.61 1.04-1.12.4-.53.71-1.12.92-1.76a24.74 24.74 0 0 0 1.2-5.36c.11-.96.24-2.33.4-4.12.24-2.8.36-5.61.36-8.44l-.04-2.24c0-.5.15-.92.44-1.24.3-.35.7-.52 1.2-.52.16 0 .28.01.36.04 1.23.21 2.23.35 3 .4h.2c.35 0 .55-.07.6-.2.24-.32.54-.48.88-.48.24 0 .46.05.64.16.43.16.71.56.84 1.2l-.2 6.84a623.27 623.27 0 0 0 .12 12.72l.04 2.2c0 .21.02.41.04.6l.08.56c.54.05.94.08 1.2.08.22 0 .38-.01.48-.04.59-.08 1.11.07 1.56.44.48.35.72.8.72 1.36 0 .72-.05 1.8-.16 3.24 0 .37-.02.9-.08 1.6-.05.56-.29.9-.72 1.04Zm-11.52-6.36a106 106 0 0 0 3.52-.36 16.6 16.6 0 0 0 2.6-.6c.27-3.23.4-6.68.4-10.36 0-3.41-.13-7.16-.4-11.24l-3.88-.2-.04 1.88c-.21 4.1-.36 7.17-.44 9.2a33.3 33.3 0 0 1-1.56 8.96l-.36 1.2a4.44 4.44 0 0 1-.76 1.6l.92-.08Zm22.8 1.8c-.62 0-1.07-.1-1.36-.28-.3-.19-.44-.53-.44-1.04 0-.8-.14-2.16-.4-4.08l-.16-.84-3.96-.6a47.3 47.3 0 0 0-.68 3.72c-.16 1.3-.42 2.17-.76 2.6a.95.95 0 0 1-.8.36c-.32 0-.62-.1-.88-.28a.95.95 0 0 1-.4-.76l.08-.2.04-.16a176.2 176.2 0 0 0 4-20.28 29 29 0 0 0 .12-1.64c.08-.99.16-1.77.24-2.36.1-.59.26-1.03.48-1.32h1.36c.37 0 .7.1.96.28.26.16.4.4.4.72 0 2.03.28 5.04.84 9.04.53 4.1.8 6.99.8 8.64 0 .16.06.57.2 1.24.13.61.2 1.01.2 1.2 0 .19.13.99.4 2.4.24 1.28.36 2.1.36 2.48v.04c0 .59-.22.96-.64 1.12Zm-2.64-7.68a7.7 7.7 0 0 1-.12-1.48c0-2.4-.22-5.47-.64-9.2l-.4-4.16c-1.15 6.27-1.94 11-2.36 14.2.4.27 1.57.48 3.52.64Z"
-                  fill="#0F805D"
-                />
-              </svg>
-            </a>
-            <ul class="main-footer__social-list social list">
-              <li class="social__item">
-                <a
-                  class="social__link social__link--tg link"
-                  href="https://t.me/htmlacademy"
-                >
-                  <span class="visually-hidden">ссылка на телеграм</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link social__link--vk link"
-                  href="https://vk.com/htmlacademy"
-                >
-                  <span class="visually-hidden">ссылка на вконтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link social__link--youtube link"
-                  href="https://www.youtube.com/user/htmlacademyru"
-                >
-                  <span class="visually-hidden">ссылка на youtube</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <a
-            class="main-footer__copyright-link link copyright"
-            href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <span class="copyright__description text">HTML Academy</span>
-          </a>
-        </div>
-      </footer>
+      <footer class="main-footer"></footer>
     </div>
   </body>
 </html>

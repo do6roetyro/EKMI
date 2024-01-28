@@ -1,6 +1,8 @@
-<<<<<<< HEAD
 @use "variables.scss";
 @use "mixins.scss";
+
+@import "../../../node_modules/swiper/swiper";
+@import "../../../node_modules/swiper/swiper-bundle";
 
 body {
   margin: 0;
@@ -24,6 +26,23 @@ a {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -36,6 +55,5 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-=======
-/* здесь используйте глобальные селекторы img, body, html и так далее */
->>>>>>> 7daa6e42317ee952f01291f6f4b7dc357b982298
+
+

@@ -1,0 +1,39 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.menu {
+  width: 240px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-color: #ffffff;
+
+  font-size: 17px;
+
+  overflow: hidden;
+
+  z-index: 5;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.menu__wrapper {
+  padding: 28px 31px 28px 20px;
+}
+
+.menu__title {
+  padding-bottom: 23px;
+  color: variables.$color-orange;
+}
+
+.menu__list {
+  color: variables.$color-text-grey;
+}
+
+.menu__item:not(:last-child) {
+  padding-bottom: 23px;
+}

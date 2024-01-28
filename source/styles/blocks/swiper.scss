@@ -1,0 +1,10 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.swiper {
+  width: 375px;
+  height: 303px;
+
+  display: flex;
+  overflow-x: hidden;
+}
