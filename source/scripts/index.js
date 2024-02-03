@@ -1,22 +1,25 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
-const swiper = new Swiper(".hero__swiper", {
-  autoplay: {
-    delay: 5000,
-  },
+const swiperHero = new Swiper(".hero__swiper", {
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  effect: "fade",
   loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
 });
+
+const swiperNew = new Swiper('.new__swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
 
 // Language list open/close
 let langButton = document.querySelector(".language");
@@ -54,6 +57,24 @@ burgerButton.onclick = function () {
   burgerElements.classList.toggle("menu-button__element--close");
   menu.classList.toggle("menu--closed");
 };
+
+//form-check
+function previewFormData(event) {
+  console.log('Function called');
+  event.preventDefault(); // Предотвращаем стандартное действие формы (отправку)
+
+  // Получаем данные из формы
+  const form = document.getElementById('feedbackForm');
+  const formData = new FormData(form);
+
+  // Преобразуем данные в объект и выводим в консоль
+  const formDataObject = {};
+  formData.forEach((value, key) => {
+    formDataObject[key] = value;
+  });
+
+  console.log(formDataObject);
+}
 
 // -- Меню навигации на мобилке.
 // const menu = document.querySelector('.main-nav__list');

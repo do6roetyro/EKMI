@@ -1,0 +1,41 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.hero {
+  background-color: variables.$color-bg-hero;
+
+  padding-bottom: 54px;
+}
+
+.hero__title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 110%;
+  color: #ffffff;
+
+  padding: 30px 75px 30px 18px;
+
+  &::first-letter {
+    color: variables.$color-orange;
+  }
+}
+
+.hero__description {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 127.5%;
+
+  text-align: center;
+
+  padding: 42px 84px 20px;
+}
+
+.hero__link {
+  width: 210px;
+  margin: 0 auto;
+
+  display: block;
+
+
+}

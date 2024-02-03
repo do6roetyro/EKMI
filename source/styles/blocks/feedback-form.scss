@@ -1,0 +1,153 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.feedback-form {
+  background-color: #ffffff;
+}
+
+.feedback-form__text {
+  color: variables.$color-orange;
+  font-size: 10px;
+  font-weight: 500;
+
+  padding-bottom: 12px;
+}
+
+.feedback-form__field {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-form__title {
+  color: variables.$color-text-dark-grey;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-bottom: 18px;
+}
+
+.feedback-form__label {
+  display: block;
+
+  &--checkbox {
+    position: relative;
+
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+
+    padding-bottom: 24px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #d1d1d1;
+
+      flex-shrink: 0;
+
+      margin-top: 4px;
+    }
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 6px;
+
+      border: 2px solid variables.$color-bg-grey;
+      border-top-style: none;
+      border-right-style: none;
+
+      transform: rotate(-45deg);
+
+      position: absolute;
+      left: 3.5px;
+      top: 7px;
+
+      display: none;
+    }
+
+    &:has(.feedback-form__input:checked) {
+      &::after {
+        display: block;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:has(.feedback-form__input:focus-within) {
+        &::before {
+          outline: 2px solid variables.$color-orange;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+
+  &--button {
+    text-align: center;
+  }
+}
+
+.feedback-from__container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  padding-bottom: 18px;
+}
+
+.feedback-form__input {
+  &--text {
+    padding: 5px;
+    margin: 0;
+
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+
+    width: 100%;
+
+    color: variables.$color-bg-grey;
+    font-family: "Raleway";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &::placeholder {
+      color: variables.$color-text-dark-grey;
+      font-family: "Raleway";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      opacity: 0.5;
+    }
+
+    &:focus-visible {
+      outline-color: variables.$color-orange;
+    }
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: red;
+    color: red;
+  }
+}
+
+.feedback-form__description {
+  color: variables.$color-text-dark-grey;
+  font-size: 11px;
+  font-weight: 400;
+
+  opacity: 0.5;
+}
+
+.feedback-form__button {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

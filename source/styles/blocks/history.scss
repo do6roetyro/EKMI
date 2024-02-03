@@ -1,0 +1,52 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.history {
+  padding-bottom: 90px;
+}
+
+.history__title {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 30px;
+}
+
+.history__subtitle {
+  padding-bottom: 10px;
+}
+
+.history__container {
+  position: relative;
+  top: -18px;
+
+  padding-bottom: 60px;
+}
+
+.history__image {
+  margin: 0 auto;
+}
+
+.history__text-container {
+  padding: 48px 18px;
+
+  background-color: variables.$color-bg-grey;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: clamp(52px, calc((52 / 390) * 100vw), 101px);
+    height: clamp(46px, calc((46 / 390) * 100vw), 55px);
+
+    background-color: variables.$color-orange;
+
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    z-index: 5;
+  }
+}
+
+

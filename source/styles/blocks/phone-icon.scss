@@ -12,11 +12,13 @@
   mask-size: 21px 21px;
   background-color: #000000;
 
-  &:hover {
-    background-color: variables.$color-orange;
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: variables.$color-orange;
+    }
 
-  &:active {
-    opacity: 0.5;
+    &:active {
+      opacity: 0.5;
+    }
   }
 }

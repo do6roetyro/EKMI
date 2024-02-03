@@ -5,7 +5,7 @@
   position: relative;
 
   width: 25px;
-  height: 25px;
+  height: 26px;
 
   background-color: transparent;
   border-color: transparent;
@@ -68,12 +68,12 @@
 
     &::before {
       transform: rotate(45deg) translateY(-0.5px) translateX(0.5px);
-      width: 26.5px;
+      width: 28.5px;
     }
 
     &::after {
       transform: rotate(-45deg) translateX(1px);
-      width: 26.5px;
+      width: 28.5px;
     }
   }
 }

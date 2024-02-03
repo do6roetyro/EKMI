@@ -1,0 +1,27 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.orange-button {
+  background-color: variables.$color-orange;
+}
+
+.orange-button__text {
+  display: block;
+  padding: 13px 21px;
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+
+  &--special {
+    padding: 14px 18px;
+  }
+
+  &--form {
+    padding: 11px 16px;
+  }
+}

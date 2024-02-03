@@ -50,9 +50,11 @@
     transition: background-color 0.2s ease;
   }
 
-  &:hover {
-    &::after {
-      background-color: variables.$color-orange;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      &::after {
+        background-color: variables.$color-orange;
+      }
     }
   }
 }

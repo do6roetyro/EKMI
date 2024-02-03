@@ -1,0 +1,9 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.subtitle {
+  color: #ffffff;
+font-weight: 500;
+line-height: 125%;
+letter-spacing: 1.6px;
+}

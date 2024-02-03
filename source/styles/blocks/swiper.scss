@@ -2,9 +2,59 @@
 @use "../global/mixins.scss";
 
 .swiper {
-  width: 375px;
-  height: 303px;
+  overflow: visible;
+}
 
-  display: flex;
-  overflow-x: hidden;
+//hero
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -28px;
+}
+
+//hero
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+//hero
+.swiper-pagination-bullet-active {
+  background-color: variables.$color-orange;
+}
+
+.swiper-slide__image {
+  object-position: top;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+//new
+.swiper-button-next,
+.swiper-button-prev {
+  color: variables.$color-text-lang;
+
+  transition: color 0.2s ease-in;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:not(:disabled):hover {
+      color: variables.$color-orange;
+    }
+  }
+}
+
+//new
+.swiper-button-next {
+  right: -10px;
+}
+
+//new
+.swiper-button-prev {
+  left: -10px;
+}
+
+//new
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
 }

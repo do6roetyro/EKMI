@@ -37,3 +37,14 @@
 .menu__item:not(:last-child) {
   padding-bottom: 23px;
 }
+
+.menu__link {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: variables.$color-text-grey;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+  }
+}

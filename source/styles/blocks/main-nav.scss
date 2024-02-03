@@ -16,3 +16,7 @@
   align-items: center;
   gap: 24px;
 }
+
+.main-nav__container-phone:has(.main-nav__phone-link:focus) {
+    outline: 2px solid;
+}

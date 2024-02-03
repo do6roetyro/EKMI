@@ -1,0 +1,72 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.partners {
+  background-image: linear-gradient(#ffffff 0, #ffffff 60px, variables.$color-bg-grey 60px, variables.$color-bg-grey 80%, #ffffff 80%, #ffffff 100%);
+}
+
+.partners__title {
+  padding-bottom: 86px;
+}
+
+.partners__subtitle {
+  padding-bottom: 15px;
+}
+
+.partners__description {
+  padding-bottom: 65px;
+}
+
+.partners__container {
+  position: relative;
+
+  margin-bottom: 96px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: clamp(314px, calc((314 / 390) * 100vw), 805px);
+    height: clamp(214px, calc((214 / 390) * 100vw), 390px);
+    background-color: variables.$color-bg-aqua;
+    background-image: url("../images/special_bg_crossing@1x.png");
+    position: absolute;
+    left: -18px;
+    top: 10vw;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: clamp(68px, calc((68/390) * 100vw), 200px);
+    height: clamp(51px, calc((51/390) * 100vw), 100px);
+    background-color: variables.$color-orange;
+    position: absolute;
+    bottom: -24px;
+    left: calc((37/390) * 100vw);
+  }
+}
+
+.partners__image {
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  height: 100%;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.partners__item {
+  flex-basis: content;
+}
+
+.partners__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,27 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.new-swiper__image {
+  margin: 0 auto;
+}
+
+.new-swiper__title {
+  color: variables.$color-text-dark-grey;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.new-swiper__price {
+  color: variables.$color-orange;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Segoe UI';
+}
+
+.new-swiper__container {
+  padding-top: 15px;
+  padding-bottom: 60px;
+}

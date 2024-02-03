@@ -98,70 +98,70 @@
                   /></label>
                 </div>
               </div>
-              <a
-                class="main-nav__phone-link phone-icon"
-                href="tel:+1234567890"
-              ></a>
+              <div class="main-nav__container-phone">
+                <a
+                  class="main-nav__phone-link phone-icon"
+                  href="tel:+1234567890"
+                ></a>
+              </div>
               <button
                 class="main-header__button menu-button"
                 type="button"
                 aria-label="меню"
               >
-                <span
-                  class="menu-button__element menu-button__element--close"
-                ></span>
+                <span class="menu-button__element"></span>
               </button>
               <div class="main-nav__menu menu menu--closed">
                 <div class="menu__wrapper">
                   <p class="menu__title">Каталог</p>
                   <ul class="menu__list list">
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Диваны</a>
+                      <a href="#" class="menu__link link">Диваны</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Кресла</a>
+                      <a href="#" class="menu__link link">Кресла</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Стулья</a>
+                      <a href="#" class="menu__link link">Стулья</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Кровати</a>
+                      <a href="#" class="menu__link link">Кровати</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Матрацы</a>
+                      <a href="#" class="menu__link link">Матрацы</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Пуфы</a>
+                      <a href="#" class="menu__link link">Пуфы</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link"
+                      <a href="#" class="menu__link link"
                         >Эксклюзивная мебель</a
                       >
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">2D-3D модели</a>
+                      <a href="#" class="menu__link link">2D-3D модели</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link"
+                      <a href="#" class="menu__link link"
                         >Индивидуальная мебель</a
                       >
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Шоу-рум</a>
+                      <a href="#" class="menu__link link">Шоу-рум</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link"
+                      <a href="#" class="menu__link link"
                         >Страница партёров дизайнеров</a
                       >
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Дилерам</a>
+                      <a href="#" class="menu__link link">Дилерам</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Контакты</a>
+                      <a href="#" class="menu__link link">Контакты</a>
                     </li>
                     <li class="menu__item">
-                      <a href="##" class="menu__link link">Каталог</a>
+                      <a href="#" class="menu__link link">Каталог</a>
                     </li>
                   </ul>
                 </div>
@@ -176,12 +176,32 @@
           <h2 class="visually-hidden">'EKMI'- Основано в 1993 году</h2>
           <p class="hero__title">ЛУЧШАЯ ЖИЗНЬ СОЗДАННАЯ ДЛЯ ВАС!</p>
           <!-- Slider main container -->
-          <div class="hero__swiper swiper">
+          <div class="hero__swiper hero-swiper swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper__wrapper swiper-wrapper">
+            <div class="swiper__wrapper hero-swiper__wrapper swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper__slide swiper-slide">
+              <div class="hero-swiper__slide swiper-slide">
                 <picture>
+                  <source
+                    media="(min-width:450px)"
+                    srcset="
+                      images/hero_1_desktop@1x.webp 1x,
+                      images/hero_1_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="870"
+                    height="617"
+                  />
+                  <source
+                    media="(min-width:450px)"
+                    srcset="
+                      images/hero_1_desktop@1x.webp 1x,
+                      images/hero_1_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="870"
+                    height="617"
+                  />
                   <source
                     media="(min-width:375px)"
                     srcset="images/hero_1@1x.webp 1x, images/hero_1@2x.webp 2x"
@@ -200,8 +220,28 @@
                   />
                 </picture>
               </div>
-              <div class="swiper__slide swiper-slide">
+              <div class="hero-swiper__slide swiper-slide">
                 <picture>
+                  <source
+                    media="(min-width:450px)"
+                    srcset="
+                      images/hero_2_desktop@1x.webp 1x,
+                      images/hero_2_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="870"
+                    height="617"
+                  />
+                  <source
+                    media="(min-width:450px)"
+                    srcset="
+                      images/hero_2_desktop@1x.webp 1x,
+                      images/hero_2_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="870"
+                    height="617"
+                  />
                   <source
                     media="(min-width:375px)"
                     srcset="images/hero_2@1x.webp 1x, images/hero_2@2x.webp 2x"
@@ -220,8 +260,28 @@
                   />
                 </picture>
               </div>
-              <div class="swiper__slide swiper-slide">
+              <div class="hero-swiper__slide swiper-slide">
                 <picture>
+                  <source
+                    media="(min-width:450px)"
+                    srcset="
+                      images/hero_3_desktop@1x.webp 1x,
+                      images/hero_3_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="870"
+                    height="617"
+                  />
+                  <source
+                    media="(min-width:450px)"
+                    srcset="
+                      images/hero_3_desktop@1x.webp 1x,
+                      images/hero_3_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="870"
+                    height="617"
+                  />
                   <source
                     media="(min-width:375px)"
                     srcset="images/hero_3@1x.webp 1x, images/hero_3@2x.webp 2x"
@@ -241,8 +301,574 @@
                 </picture>
               </div>
             </div>
-            <div class="swiper__pagination swiper-pagination">
+            <div class="hero-swiper__pagination swiper-pagination"></div>
+          </div>
+          <p class="hero__description">Основано в 1993 году</p>
+          <a href="#" class="hero__link orange-button"
+            ><span class="orange-button__text">перейти в каталог</span></a
+          >
+        </section>
+        <section class="new">
+          <div class="new__wrapper wrapper">
+            <h2 class="new__title title title__h2">Новинки</h2>
+            <div class="new__swiper new-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="new__swiper-slide swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width:375px)"
+                      srcset="
+                        images/new_chair@1x.webp 1x,
+                        images/new_chair@2x.webp 2x
+                      "
+                      type="image/webp"
+                      width="270"
+                      height="278"
+                    />
+                    <img
+                      class="new-swiper__image"
+                      src="images/new_chair@1x.jpg"
+                      alt="Диван."
+                      srcset="images/new_chair@2x.jpg 2x"
+                      width="270"
+                      height="278"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="new-swiper__container" data-title="alba">
+                    <p class="new-swiper__title">alba</p>
+                    <p class="new-swiper__price">15 000 uah</p>
+                  </div>
+                </div>
+                <div class="new__swiper-slide swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width:375px)"
+                      srcset="
+                        images/new_sofa@1x.webp 1x,
+                        images/new_sofa@2x.webp 2x
+                      "
+                      type="image/webp"
+                      width="270"
+                      height="278"
+                    />
+                    <img
+                      class="new-swiper__image"
+                      src="images/new_sofa@1x.jpg"
+                      alt="Диван."
+                      srcset="images/new_sofa@2x.jpg 2x"
+                      width="270"
+                      height="278"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="new-swiper__container" data-title="martin">
+                    <p class="new-swiper__title">martin</p>
+                    <p class="new-swiper__price">15 000 uah</p>
+                  </div>
+                </div>
+                <div class="new__swiper-slide swiper-slide">
+                  <picture>
+                    <source
+                      media="(min-width:375px)"
+                      srcset="
+                        images/new_sofa1@1x.webp 1x,
+                        images/new_sofa1@2x.webp 2x
+                      "
+                      type="image/webp"
+                      width="270"
+                      height="278"
+                    />
+                    <img
+                      class="new-swiper__image"
+                      src="images/new_sofa1@1x.jpg"
+                      alt="Диван."
+                      srcset="images/new_sofa1@2x.jpg 2x"
+                      width="270"
+                      height="278"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="new-swiper__container" data-title="luara">
+                    <p class="new-swiper__title">luara</p>
+                    <p class="new-swiper__price">15 000 uah</p>
+                  </div>
+                </div>
+              </div>
+              <div class="new__swiper-button-prev swiper-button-prev"></div>
+              <div class="new__swiper-button-next swiper-button-next"></div>
             </div>
+            <a href="#" class="new__link orange-button"
+              ><span class="orange-button__text">перейти в каталог</span></a
+            >
+          </div>
+        </section>
+        <section class="special">
+          <div class="special__wrapper wrapper">
+            <h2 class="special__title title title__h2 title__h2--white">
+              Индивидуальная мебель
+            </h2>
+            <p class="special__subtitle subtitle">Полный цикл производства.</p>
+            <p class="special__description description">
+              Качество мягкой мебели начинается задолго до начала ее
+              производства.
+            </p>
+            <div class="special__container">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/special_sofa_desktop@1x.webp 1x,
+                    images/special_sofa_desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  width="600"
+                  height="401"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/special_sofa_desktop@1x.jpg 1x,
+                    images/special_sofa_desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                  width="600"
+                  height="401"
+                />
+                <source
+                  media="(min-width:375px)"
+                  srcset="
+                    images/special_sofa@1x.webp 1x,
+                    images/special_sofa@2x.webp 2x
+                  "
+                  type="image/webp"
+                  width="340"
+                  height="239"
+                />
+                <img
+                  class="special__image"
+                  src="images/special_sofa@1x.jpg"
+                  alt="Диван по индивидуальному проекту."
+                  srcset="images/special_sofa@2x.jpg 2x"
+                  width="340"
+                  height="239"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <a href="#" class="special__link orange-button"
+              ><span class="orange-button__text orange-button__text--special"
+                >Индивидуальная мебель</span
+              ></a
+            >
+          </div>
+        </section>
+        <section class="history">
+          <!-- <div class="history__wrapper wrapper"> -->
+          <h2 class="history__title title title__h2">Наша история</h2>
+          <div class="history__text-container">
+            <p class="history__subtitle subtitle">Наработки длинной в 25 лет</p>
+            <p class="history__description description">
+              Каждый производитель заявляет, что делает все для своих
+              покупателей, но не каждый производитель способен подтвердить свои
+              заявления многолетней историей
+            </p>
+          </div>
+          <div class="history__container">
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  images/history__sofa_desktop@1x.webp 1x,
+                  images/history__sofa_desktop@2x.webp 2x
+                "
+                type="image/webp"
+                width="800"
+                height="543"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  images/history__sofa_desktop@1x.webp 1x,
+                  images/history__sofa_desktop@2x.webp 2x
+                "
+                type="image/webp"
+                width="800"
+                height="543"
+              />
+              <source
+                media="(min-width:375px)"
+                srcset="
+                  images/history__sofa@1x.webp 1x,
+                  images/hero__2@2x.webp       2x
+                "
+                type="image/webp"
+                width="339"
+                height="233"
+              />
+              <img
+                class="history__image"
+                src="images/history__sofa@1x.jpg"
+                alt="Диван с историей."
+                srcset="images/history__sofa@2x.jpg 2x"
+                width="339"
+                height="233"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="history__interval interval">
+            <span class="interval__big-date">25 лет</span>
+            <div class="interval__container">
+              <span class="interval__small-date interval__small-date--start"
+                >1993</span
+              >
+              <span class="interval__small-date interval__small-date--end"
+                >2023</span
+              >
+            </div>
+          </div>
+          <!-- </div> -->
+        </section>
+        <section class="feedback">
+          <h2 class="visually-hidden">Форма для обратной связи</h2>
+          <div class="feedback__wrapper wrapper">
+            <form
+              class="feedback__form feedback-form"
+              action="#"
+              enctype="text/plain"
+              id="feedbackForm"
+            >
+              <p class="feedback-form__text">Заполните форму</p>
+              <fieldset class="feedback-form__field">
+                <legend class="feedback-form__title">остались вопросы?</legend>
+                <div class="feedback-from__container">
+                  <label
+                    class="feedback-form__label feedback-form__label--text"
+                  >
+                    <input
+                      class="feedback-form__input feedback-form__input--text"
+                      type="text"
+                      name="name"
+                      placeholder="Ваше имя*"
+                      minlength="2"
+                      maxlength="32"
+                      required
+                    />
+                  </label>
+                  <label
+                    class="feedback-form__label feedback-form__label--text"
+                  >
+                    <input
+                      class="feedback-form__input feedback-form__input--text"
+                      type="tel"
+                      name="phone"
+                      pattern="^\+7[1-9]{10}$"
+                      placeholder="Ваш номер телефона*"
+                      required
+                    />
+                  </label>
+                  <label
+                    class="feedback-form__label feedback-form__label--text"
+                  >
+                    <input
+                      class="feedback-form__input feedback-form__input--text"
+                      type="text"
+                      name="country"
+                      placeholder="Страна"
+                    />
+                  </label>
+                  <label
+                    class="feedback-form__label feedback-form__label--text"
+                  >
+                    <input
+                      class="feedback-form__input feedback-form__input--text"
+                      type="text"
+                      name="comment"
+                      placeholder="Комментарий"
+                    />
+                  </label>
+                </div>
+                <label
+                  class="feedback-form__label feedback-form__label--checkbox"
+                >
+                  <input
+                    class="feedback-form__input feedback-form__input--checkbox visually-hidden"
+                    type="checkbox"
+                    name="agreement to terms"
+                    required
+                  />
+                  <span class="feedback-form__description">
+                    Подтверждая заказ, я принимаю условия пользовательского
+                    соглашения
+                  </span>
+                </label>
+                <label
+                  class="feedback-form__label feedback-form__label--button"
+                >
+                  <button
+                    class="feedback-form__button orange-button"
+                    type="submit"
+                    onclick="previewFormData(event)"
+                  >
+                    <span class="orange-button__text orange-button__text--form"
+                      >запросить звонок</span
+                    >
+                  </button>
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="advantages__wrapper wrapper">
+            <ul class="advantages__list list">
+              <li class="advantages__item">
+                Осуществляемые компанией «Экми-Мебель» постоянные инвестиции в
+                сертификацию своей продукции, убедительно подтверждают лидерство
+                компании на украинском рынке высококачественной мягкой мебели.
+              </li>
+              <li class="advantages__item">
+                Фабрика «Экми-мебель» сертифицирована по системе менеджмента
+                качества ISO 9001:2000 на соответствие международным стандартам,
+                представительством «Бюро Веритас» в Украине.
+              </li>
+              <li class="advantages__item">
+                Осуществляемые компанией «Экми-Мебель» постоянные инвестиции в
+                сертификацию своей продукции, убедительно подтверждают лидерство
+                компании на украинском рынке высококачественной мягкой мебели.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="partners__wrapper wrapper">
+            <h2 class="partners__title title title__h2">Наши партнёры</h2>
+            <p class="partners__subtitle subtitle">
+              Компании сотрудничают с нами по всему миру
+            </p>
+            <p class="partners__description description">
+              На данный момент дилерская сеть фабрики «Экми-Мебель» насчитывает
+              более 30 салонов по всей Украине. Сейчас мы заинтересованы в
+              расширении сети и предлагаем выгодные условия для сотрудничества.
+              <br />
+              <br />
+              Основным преимуществом фабрики является изготовление любого
+              индивидуального изделия, мягкой мебели и аксессуаров из наших
+              основных коллекций. Также присутствует линейка оригинальных
+              интерьерных корпусных изделий.
+            </p>
+            <div class="partners__container">
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/partners_sofa_desktop@1x.webp 1x,
+                    images/partners_sofa_desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  width="670"
+                  height="397"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/partners_sofa_desktop@1x.jpg 1x,
+                    images/partners_sofa_desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                  width="670"
+                  height="397"
+                />
+                <source
+                  media="(min-width:375px)"
+                  srcset="
+                    images/partners_sofa@1x.webp 1x,
+                    images/partners_sofa@2x.webp 2x
+                  "
+                  type="image/webp"
+                  width="340"
+                  height="204"
+                />
+                <img
+                  class="partners__image"
+                  src="images/partners_sofa@1x.jpg"
+                  alt="Диван."
+                  srcset="images/partners_sofa@2x.jpg 2x"
+                  width="340"
+                  height="204"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <ul class="partners__list list">
+              <!-- #1 VOGUE -->
+              <li class="partners__item partners__item--vogue">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/vogue_desktop@1x.webp 1x,
+                      images/vogue_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="352"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/vogue_desktop@1x.jpg 1x,
+                      images/vogue_desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                    width="352"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/vogue@1x.webp 1x, images/vogue@2x.webp 2x"
+                    type="image/webp"
+                    width="352"
+                    height="90"
+                  />
+                  <img
+                    class="partners__image"
+                    src="images/vogue@1x.jpg"
+                    alt="Vogue."
+                    srcset="images/vogue@2x.jpg 2x"
+                    width="102"
+                    height="26"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+                 <!-- #2 APPLE -->
+              <li class="partners__item partners__item--apple">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/apple_desktop@1x.webp 1x,
+                      images/apple_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="97"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/apple_desktop@1x.jpg 1x,
+                      images/apple_desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                    width="97"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/apple@1x.webp 1x, images/apple@2x.webp 2x"
+                    type="image/webp"
+                    width="28"
+                    height="26"
+                  />
+                  <img
+                    class="partners__image"
+                    src="images/apple@1x.jpg"
+                    alt="Apple."
+                    srcset="images/apple@2x.jpg 2x"
+                    width="28"
+                    height="26"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+                 <!-- #3 ZARA -->
+              <li class="partners__item partners__item--zara">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/apple_desktop@1x.webp 1x,
+                      images/apple_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="211"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/zara_desktop@1x.jpg 1x,
+                      images/zara_desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                    width="211"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/zara@1x.webp 1x, images/zara@2x.webp 2x"
+                    type="image/webp"
+                    width="62"
+                    height="26"
+                  />
+                  <img
+                    class="partners__image"
+                    src="images/zara@1x.jpg"
+                    alt="Apple."
+                    srcset="images/zara@2x.jpg 2x"
+                    width="62"
+                    height="26"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+                 <!-- #3 SAMSUNG -->
+              <li class="partners__item partners__item--samsung">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/samsung_desktop@1x.webp 1x,
+                      images/samsung_desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    width="262"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      images/samsung_desktop@1x.jpg 1x,
+                      images/samsung_desktop@2x.jpg 2x
+                    "
+                    type="image/webp"
+                    width="262"
+                    height="90"
+                  />
+                  <source
+                    media="(min-width:375px)"
+                    srcset="images/samsung@1x.webp 1x, images/samsung@2x.webp 2x"
+                    type="image/webp"
+                    width="76"
+                    height="26"
+                  />
+                  <img
+                    class="partners__image"
+                    src="images/samsung@1x.jpg"
+                    alt="Apple."
+                    srcset="images/samsung@2x.jpg 2x"
+                    width="76"
+                    height="26"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+            </ul>
           </div>
         </section>
       </main>

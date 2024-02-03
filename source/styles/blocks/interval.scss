@@ -1,0 +1,33 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.interval {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.interval__big-date {
+  color: rgba(52, 52, 52, 0.1);
+  font-size: 111px;
+  font-weight: 600;
+  line-height: 100%;
+
+  display: block;
+
+  padding-bottom: 40px;
+}
+
+.interval__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.interval__small-date {
+  color: variables.$color-text-dark-grey;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 127.5%;
+}
+
+

@@ -1,0 +1,46 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.advantages__wrapper {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.advantages__list {
+  display: flex;
+
+  flex-direction: column;
+  gap: 144px;
+
+  counter-reset: myCounter;
+
+  padding-left: 52px;
+}
+
+.advantages__item {
+  color: variables.$color-text-dark-grey;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127.5%;
+  letter-spacing: 0.9px;
+
+  position: relative;
+
+  &:before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    display: block;
+
+    color: rgba(52, 52, 52, 0.1);
+    font-family: "Poppins";
+    font-size: 176px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.5%;
+
+    position: absolute;
+    left: -48px;
+    top: -48px;
+  }
+}

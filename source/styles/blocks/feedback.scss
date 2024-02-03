@@ -1,0 +1,15 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.feedback {
+  background-color: variables.$color-bg-aqua;
+}
+
+.feedback__form {
+  padding: 22px 36px 17px;
+}
+
+.feedback__wrapper {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
