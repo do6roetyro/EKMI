@@ -6,7 +6,7 @@
   width: 25px;
   height: 25px;
 
-  mask-image: url("../../images/icons/phone.svg");
+  mask-image: url("../../images/icons/stack.svg#phone");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 21px 21px;
@@ -20,5 +20,24 @@
     &:active {
       opacity: 0.5;
     }
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    mask-image: none;
+    background-color: transparent;
+    width: fit-content;
+
+    font-family: variables.$font-open-sans;
+    font-size: 13px;
+    line-height: 150%;
+    color: variables.$color-text-dark-grey;
+  }
+}
+
+.phone-icon__text {
+  display: none;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: inline-block;
   }
 }

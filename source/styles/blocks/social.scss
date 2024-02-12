@@ -1,0 +1,33 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+
+}
+
+.social__link {
+  &--instagram {
+    @include mixins.pseudoMask("../../images/icons/ig.svg", 28px, 28px, 28px, 28px, #ffffff)
+    // $url, $width, $height, $widthsvg, $heightsvg, $color
+  }
+
+  &--facebook {
+    @include mixins.pseudoMask("../../images/icons/fb.svg", 28px, 28px, 28px, 28px, #ffffff)
+  }
+
+  transition: background-color, opacity 0.2s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: variables.$color-orange;
+    }
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

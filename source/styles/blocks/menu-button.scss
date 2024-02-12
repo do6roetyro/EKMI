@@ -16,6 +16,10 @@
   overflow: hidden;
 
   z-index: 10;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: none;
+  }
 }
 
 .menu-button__element {

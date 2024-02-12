@@ -8,6 +8,10 @@
 
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: variables.$screen-tablet) {
+    position: relative;
+  }
 }
 
 .main-nav__container {
@@ -15,8 +19,36 @@
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-direction: row-reverse;
+    width: 100%;
+  }
 }
 
-.main-nav__container-phone:has(.main-nav__phone-link:focus) {
-    outline: 2px solid;
+.main-nav__link {
+  transition: opacity 0.2s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    z-index: 10;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.main-nav__container-phone:has(.main-nav__phone-link:focus-visible) {
+  outline: 2px solid;
 }

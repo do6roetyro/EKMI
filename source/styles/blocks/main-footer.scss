@@ -1,0 +1,121 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.main-footer {
+  background-color: variables.$color-bg-grey;
+}
+
+.main-footer__wrapper {
+  padding: 63px 36px 27px;
+  text-align: center;
+}
+
+.main-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 58px;
+}
+
+.main-footer__list {
+  column-count: 2;
+  column-gap: 48px;
+  padding-bottom: 77px;
+}
+
+.main-footer__item {
+  padding-bottom: 16px;
+}
+
+.main-footer__link {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: capitalize;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.main-footer__button {
+  border: none;
+  width: 271px;
+  text-align: center;
+  margin-bottom: 51px;
+
+  .orange-button__text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    padding: 10px 14px;
+  }
+}
+
+.main-footer__phone {
+  font-family: variables.$font-open-sans;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #ffffff;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.main-footer__logo-link {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 34px;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+}
+
+.main-footer__logo {
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-footer__copyright {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-align: center;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 27px;
+}

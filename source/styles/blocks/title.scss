@@ -1,11 +1,13 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-.title__h2 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 110%;
-  text-align: start;
+.title {
+  &--h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+    text-align: start;
+  }
 
   &--white {
     color: #ffffff;

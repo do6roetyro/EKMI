@@ -1,6 +1,9 @@
+//SWIPERS
+
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
+//1
 const swiperHero = new Swiper(".hero__swiper", {
   // autoplay: {
   //   delay: 5000,
@@ -12,14 +15,25 @@ const swiperHero = new Swiper(".hero__swiper", {
   },
 });
 
-const swiperNew = new Swiper('.new__swiper', {
+//2
+const swiperNew = new Swiper(".new__swiper", {
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
-
+//3
+const swiperPartners = new Swiper(".partners__swiper", {
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  effect: "fade",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 // Language list open/close
 let langButton = document.querySelector(".language");
@@ -60,11 +74,11 @@ burgerButton.onclick = function () {
 
 //form-check
 function previewFormData(event) {
-  console.log('Function called');
+  console.log("Function called");
   event.preventDefault(); // Предотвращаем стандартное действие формы (отправку)
 
   // Получаем данные из формы
-  const form = document.getElementById('feedbackForm');
+  const form = document.getElementById("feedbackForm");
   const formData = new FormData(form);
 
   // Преобразуем данные в объект и выводим в консоль
@@ -75,6 +89,20 @@ function previewFormData(event) {
 
   console.log(formDataObject);
 }
+
+//Раскрыть список или закрыть спислк на ссылке каталог
+
+const dropdown = document.querySelector(".menu__link--sublist");
+const menuSublist = document.querySelector(".menu__sublist");
+
+dropdown.onclick = function () {
+  // предотвратить переход по ссылке в мобильной версии
+  if (window.innerWidth < 1150) {
+    menuSublist.classList.toggle("menu__sublist--active");
+    dropdown.classList.toggle("menu__link--active");
+    return false;
+  }
+};
 
 // -- Меню навигации на мобилке.
 // const menu = document.querySelector('.main-nav__list');

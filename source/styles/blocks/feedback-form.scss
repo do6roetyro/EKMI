@@ -91,7 +91,7 @@
   }
 }
 
-.feedback-from__container {
+.feedback-form__container {
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -110,7 +110,7 @@
     width: 100%;
 
     color: variables.$color-bg-grey;
-    font-family: "Raleway";
+    font-family: variables.$font-raleway;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -118,7 +118,7 @@
 
     &::placeholder {
       color: variables.$color-text-dark-grey;
-      font-family: "Raleway";
+      font-family: variables.$font-raleway;
       font-size: 10px;
       font-style: normal;
       font-weight: 400;

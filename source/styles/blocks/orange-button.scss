@@ -3,6 +3,18 @@
 
 .orange-button {
   background-color: variables.$color-orange;
+
+  transition: background-color, opacity 0.2s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .orange-button__text {
@@ -17,11 +29,19 @@
   line-height: 150%;
   text-transform: uppercase;
 
+  transition: color 0.2s ease;
+
   &--special {
     padding: 14px 18px;
   }
 
   &--form {
     padding: 11px 16px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: variables.$color-orange;
+    }
   }
 }

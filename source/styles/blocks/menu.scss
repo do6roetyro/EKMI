@@ -18,6 +18,16 @@
 
   &--closed {
     display: none;
+
+    @media (min-width: variables.$screen-tablet) {
+      position: relative;
+      display: block;
+    }
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    position: relative;
+    width: auto;
   }
 }
 
@@ -32,19 +42,115 @@
 
 .menu__list {
   color: variables.$color-text-grey;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+  }
+}
+
+.menu__item {
+  @media (min-width: variables.$screen-tablet) {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+}
+
+.menu__item:has(.menu__sublist) {
+  @media (min-width: variables.$screen-tablet) {
+    display: block;
+  }
+}
+
+// .menu__item {
+//   @media (min-width: variables.$screen-tablet) {
+//     display: none;
+//   }
+// }
+
+.menu__item--sublist {
+  @media (min-width: variables.$screen-tablet) {
+    display: block;
+  }
 }
 
 .menu__item:not(:last-child) {
   padding-bottom: 23px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+  }
+}
+
+.menu__sublist {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  .menu__item {
+    padding-left: 18px;
+
+    &:first-child {
+      padding-top: 18px;
+    }
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.15);
+    background: #fff;
+  }
 }
 
 .menu__link {
+  &--sublist {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    &::after {
+      content: "\1F863";
+      display: block;
+
+      @media (min-width: variables.$screen-tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &--active {
+    color: variables.$color-orange;
+
+    &::after {
+      content: "\1F861";
+      display: block;
+
+      @media (min-width: variables.$screen-tablet) {
+        display: none;
+      }
+    }
+  }
+
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       text-decoration: underline;
       text-decoration-color: variables.$color-text-grey;
       text-decoration-thickness: 1px;
       text-underline-offset: 4px;
+    }
+
+    &:active {
+      transform: translateY(2px);
     }
   }
 }
